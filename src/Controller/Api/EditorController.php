@@ -12,7 +12,7 @@ use App\Entity\Editor; // charge l'entité
 class EditorController extends AbstractController
 {
     /**
-     * @Route("/editor", name="editor")
+     * @Route("/editor", name="editor", methods={"GET"})
      */
     public function index()
     {
