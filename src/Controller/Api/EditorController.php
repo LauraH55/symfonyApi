@@ -43,7 +43,7 @@ class EditorController extends AbstractController
        ->find($id);
 
        if (!$editor) {
-         
+
          throw new NotFoundHttpException("L'Éditeur n'existe pas !");
 
        }
@@ -60,7 +60,7 @@ class EditorController extends AbstractController
        $response = [
          'id' => $editor->getId(),
          'name' => $editor->getName(),
-         'game' => $games,
+         'games' => $games,
        ];
 
        return $this->json($response);
